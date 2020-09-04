@@ -15,10 +15,12 @@
         <module>microcloud-provider-product3</module>
         <module>microcloud-consumer</module>
         <module>microcloud-consumer-ribbon</module>
+        <module>microcloud-consumer-feign</module>
         <module>microcloud-security</module>
         <module>microcloud-eureka</module>
         <module>microcloud-eureka2</module>
         <module>microcloud-eureka3</module>
+        <module>microcloud-service</module>
     </modules>
 
     <properties>

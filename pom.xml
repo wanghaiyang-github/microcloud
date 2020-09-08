@@ -21,6 +21,7 @@
         <module>microcloud-eureka2</module>
         <module>microcloud-eureka3</module>
         <module>microcloud-service</module>
+        <module>microcloud-provider-product-hystrix</module>
     </modules>
 
     <properties>

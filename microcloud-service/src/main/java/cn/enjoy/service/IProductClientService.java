@@ -1,5 +1,6 @@
 package cn.enjoy.service;
 
+import cn.enjoy.fallback.IProductClientServiceFallbackFactory;
 import cn.enjoy.feign.FeignClientConfig;
 import cn.enjoy.vo.Product;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -12,7 +13,7 @@ import java.util.List;
  * @author wanghaiyang
  * @date 2020/9/3 22:57
  */
-@FeignClient(name = "MICROCLOUD-PROVIDER-PRODUCT", configuration = FeignClientConfig.class)
+@FeignClient(name = "MICROCLOUD-PROVIDER-PRODUCT", configuration = FeignClientConfig.class,fallbackFactory = IProductClientServiceFallbackFactory.class)
 public interface IProductClientService {
     @RequestMapping("/prodcut/get/{id}")
     public Product getProduct(@PathVariable("id")long id);

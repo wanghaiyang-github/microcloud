@@ -21,6 +21,13 @@ spring:
 logging:
   level:
     cn.enjoy.mapper: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:

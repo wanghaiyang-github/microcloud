@@ -12,8 +12,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients("cn.enjoy.service")
-public class ConsumerAppFeign {
+public class ConsumerHystrixAppFeign {
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerAppFeign.class,args);
+        SpringApplication.run(ConsumerHystrixAppFeign.class,args);
     }
 }

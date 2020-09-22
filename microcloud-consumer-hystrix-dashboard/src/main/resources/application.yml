@@ -1,4 +1,2 @@
 server:
-  port: 9901
-
-
+  port: 9001

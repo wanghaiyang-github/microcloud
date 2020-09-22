@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>microcloud-provider-user-hystrix</artifactId>
-    <version>1.0.0</version>
     <dependencies>
         <dependency>
             <groupId>enjoy</groupId>
@@ -42,4 +41,5 @@
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
     </dependencies>
+
 </project>

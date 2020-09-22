@@ -6,14 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author wanghaiyang
- * @date 2020/9/9 22:35
- */
 @RestController
 @RequestMapping("/users")
 public class UserController {
-
     @RequestMapping("/get/{name}")
     @HystrixCommand
     public  Object get(@PathVariable("name")String name) {
@@ -23,5 +18,4 @@ public class UserController {
         users.setSex("F");
         return users;
     }
-
 }

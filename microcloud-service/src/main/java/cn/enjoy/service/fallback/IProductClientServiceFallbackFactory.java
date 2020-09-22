@@ -1,4 +1,5 @@
-package cn.enjoy.fallback;
+package cn.enjoy.service.fallback;
+
 
 import cn.enjoy.service.IProductClientService;
 import cn.enjoy.vo.Product;
@@ -7,15 +8,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author wanghaiyang
- * @date 2020/9/8 13:33
- */
 @Component
 public class IProductClientServiceFallbackFactory implements FallbackFactory<IProductClientService> {
     @Override
     public IProductClientService create(Throwable throwable) {
-        return new IProductClientService() {
+        return  new IProductClientService() {
             @Override
             public Product getProduct(long id) {
                 Product product = new Product();
@@ -37,4 +34,3 @@ public class IProductClientServiceFallbackFactory implements FallbackFactory<IPr
         };
     }
 }
-

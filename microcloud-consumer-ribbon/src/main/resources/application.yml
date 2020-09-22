@@ -1,10 +1,10 @@
 server:
-  port: 88
+  port: 80
 
 ribbon:
   eureka:
-   enabled: false
+    enabled: false
 
 MICROCLOUD-PROVIDER-PRODUCT:
   ribbon:
-   listOfServers: http://localhost:8080,http://localhost:8081,http://localhost:8082
+    listOfServers: http://localhost:8080,http://localhost:8081,http://localhost:8082

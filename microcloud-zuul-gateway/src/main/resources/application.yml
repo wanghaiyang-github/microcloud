@@ -10,3 +10,22 @@ eureka:
 spring:
   application:
     name:  microcloud-zuul-gateway
+
+zuul:
+  routes:
+    users:
+      path: /users-proxy/**
+      serviceId: microcloud-provider-users
+    users2:
+      path: /users2-proxy/**
+      url: http://localhost:8090/
+    #microcloud-provider-users:  /users-proxy/**
+    #在zuul中还有另外一种配置方式
+    #users.path: /users-proxy/**
+    #users.serviceId: microcloud-provider-users
+  #如果需要忽略掉多微服务的名称,用*代替
+  ignored-services: "*"
+  #公共前缀
+  prefix: /enjoy-api
+
+

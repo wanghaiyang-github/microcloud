@@ -3,11 +3,8 @@ package cn.enjoy;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * @author wanghaiyang
- * @date 2020/9/22 22:29
- */
 @SpringBootApplication
 @EnableZuulProxy
 public class ZuulApp {
